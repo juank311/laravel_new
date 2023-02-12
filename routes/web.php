@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios');
+
+
+//Route::get('/usuarios', [UsuariosController::class, 'index', 'search'])->name('usuarios');
+
+Route::get('/usuarios', [UsuariosController::class, 'search'])->name('usuarios');

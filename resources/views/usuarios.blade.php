@@ -22,6 +22,7 @@
         </div>
     </nav>
 <br/>
+
     <div class="container" style="margin-top: 50px;">
         <table class="table table-bordered">
             <thead>
@@ -36,7 +37,7 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Juan</td>
+                    <td>{{ $search}}</td>
                     <td>Pérez</td>
                     <td>555-555-555</td>
                     <td>juanperez@email.com</td>

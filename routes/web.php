@@ -19,7 +19,12 @@ Route::get('/', function () {
 })->name('welcome');
 
 
-
 //Route::get('/usuarios', [UsuariosController::class, 'index', 'search'])->name('usuarios');
 
-Route::get('/usuarios', [UsuariosController::class, 'search'])->name('usuarios');
+//Route::get('/usuarios', [UsuariosController::class, 'search'])->name('usuarios');
+
+Route::resource('usuarios', UsuariosController::class);
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
